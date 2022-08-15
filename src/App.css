@@ -52,6 +52,10 @@ button{
 button:hover{
     cursor: pointer;
 }
+:focus{
+   outline: 2px solid #e8cd6a;
+   border: none;
+}
 /* DIMENSION NAME */
 .dimension_name{
     font-size: 22px;
@@ -103,17 +107,32 @@ ul{
 }
 .residents_container{
     width: 299px;
-    height: 500px;
+    height: 520px;
     flex-wrap: wrap;
     margin: 1rem 1.5rem;
 }
 header{
-    padding-top: 0;
-    margin-top: 0;
+  height: 301px;
+  position: relative;
+}
+.status{
+  height: 35px;
+  width: 130px;
+  color: white;
+  font-size: 25px;
+  font-family: var(--second-font);
+  /*background-color:rgb(124, 210, 231)8; */
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 15rem;
+  margin-left: calc(100% - 130px);
 }
 img{
     width: 100%;
-    border-bottom: 2px #9b9797 solid;
+    border-bottom: 2px #9b9797 solid; 
 }
 main{
     color: var(--Font-Color);

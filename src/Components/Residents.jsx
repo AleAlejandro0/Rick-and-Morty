@@ -4,10 +4,20 @@ import useFetch from '../Hooks/useFetch'
 const Residents = ({URL}) => {
 
   const resident =  useFetch(URL)
+  const status = resident?.status
+  let statusColor = '#505154';
 
+  if(status == 'Alive'){
+    statusColor = '#7093ff'
+  }else if(status == 'Dead'){
+  statusColor = '#e47878'
+  }
+
+  console.log(status)
   return (
     <div className='residents_container'>
       <header>
+          <div className='status'style={{backgroundColor: statusColor}}>{resident?.status}</div>
         <img src={resident?.image} alt={`${resident?.name}'s photo`} />
       </header>
       <main>

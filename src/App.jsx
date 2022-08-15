@@ -22,8 +22,6 @@ function App() {
             .then(res => setRequestAPI(res.data) )
             .catch(err => console.log(err))
   }, [find])
-  
-  console.log(requestAPI)
 
   /* SEARCH BY SUBMITED ID */
 
