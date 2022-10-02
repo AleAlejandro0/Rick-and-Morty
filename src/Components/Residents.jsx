@@ -13,7 +13,6 @@ const Residents = ({URL}) => {
   statusColor = '#e47878'
   }
 
-  console.log(status)
   return (
     <div className='residents_container'>
       <header>
